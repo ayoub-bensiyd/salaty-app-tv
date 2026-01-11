@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_day"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:textSize="48sp"
+            android:textColor="@color/text_day"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Sound Toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sound_enabled"
+                android:textSize="28sp"
+                android:textColor="@color/text_day" />
+
+            <Switch
+                android:id="@+id/soundSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+        </LinearLayout>
+
+        <!-- Ramadan Mode Toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ramadan_mode"
+                android:textSize="28sp"
+                android:textColor="@color/text_day" />
+
+            <Switch
+                android:id="@+id/ramadanSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+        </LinearLayout>
+
+        <!-- Iqama Durations -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مدة الإقامة (دقيقة)"
+            android:textSize="32sp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Fajr Iqama -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fajr"
+                android:textSize="24sp"
+                android:textColor="@color/text_day" />
+
+            <EditText
+                android:id="@+id/fajrIqamaDuration"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="20"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Dhuhr Iqama -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dhuhr"
+                android:textSize="24sp"
+                android:textColor="@color/text_day" />
+
+            <EditText
+                android:id="@+id/dhuhrIqamaDuration"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="15"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Asr Iqama -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/asr"
+                android:textSize="24sp"
+                android:textColor="@color/text_day" />
+
+            <EditText
+                android:id="@+id/asrIqamaDuration"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="15"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Maghrib Iqama -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/maghrib"
+                android:textSize="24sp"
+                android:textColor="@color/text_day" />
+
+            <EditText
+                android:id="@+id/maghribIqamaDuration"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="10"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Isha Iqama -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/isha"
+                android:textSize="24sp"
+                android:textColor="@color/text_day" />
+
+            <EditText
+                android:id="@+id/ishaIqamaDuration"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="15"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Prayer Duration -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prayer_duration"
+            android:textSize="28sp"
+            android:textColor="@color/text_day"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/prayerDuration"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="30"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Change PIN -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_pin"
+            android:textSize="28sp"
+            android:textColor="@color/text_day"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/newPin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:hint="رمز جديد"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:textSize="24sp"
+                android:paddingHorizontal="32dp"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textSize="24sp"
+                android:paddingHorizontal="32dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

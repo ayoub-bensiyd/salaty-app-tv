@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1B5E20</color>
+    <color name="primary_dark">#0D3818</color>
+    <color name="accent">#FFD700</color>
+    <color name="background_day">#E8F5E9</color>
+    <color name="background_night">#000000</color>
+    <color name="text_day">#1B5E20</color>
+    <color name="text_night">#4A4A4A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="prayer_active">#FFD700</color>
+    <color name="prayer_inactive">#CCCCCC</color>
+</resources>

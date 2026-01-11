@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">أوقات الصلاة - وجدة</string>
+    <string name="fajr">الفجر</string>
+    <string name="dhuhr">الظهر</string>
+    <string name="asr">العصر</string>
+    <string name="maghrib">المغرب</string>
+    <string name="isha">العشاء</string>
+    <string name="adhan">الأذان</string>
+    <string name="iqama">الإقامة</string>
+    <string name="settings">الإعدادات</string>
+    <string name="pin_title">أدخل رمز PIN</string>
+    <string name="pin_default">1234</string>
+    <string name="sound_enabled">تفعيل الصوت</string>
+    <string name="ramadan_mode">وضع رمضان</string>
+    <string name="change_pin">تغيير رمز PIN</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="iqama_duration">مدة الإقامة (دقيقة)</string>
+    <string name="prayer_duration">مدة الصلاة (دقيقة)</string>
+    <string name="time_adjustment">تعديل الوقت (دقيقة)</string>
+</resources>

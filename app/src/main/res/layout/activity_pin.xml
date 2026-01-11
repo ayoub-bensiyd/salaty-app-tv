@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background_day"
+    android:padding="48dp"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pin_title"
+        android:textSize="48sp"
+        android:textColor="@color/text_day"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/pinInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:hint="****"
+        android:textColorHint="#CCCCCC"
+        android:background="@color/white"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/pinError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رمز PIN غير صحيح"
+        android:textColor="#D32F2F"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="اضغط OK للتأكيد"
+        android:textSize="20sp"
+        android:textColor="@color/text_day"
+        android:alpha="0.7"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
